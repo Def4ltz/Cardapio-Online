@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dev Burguer - Inicio</title>
+</head>
+<body>
+
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-300" src="./assets/hamb-1.png" alt="logo Dev Burguer">
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+            <span class="text-white font-medium">Rua dev 432, São Paulo - SP</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00</span>
+            </div>
+
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
+    <hr>
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-10">
+
+            <!--Inicio do produto-->
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/hamb-1.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold">Hamburguer Smash de 300g</p>
+                    <p class="text-sm">Pao levinho de fermentação natural de trigo, bacon e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18,50</p>
+                        <button data-name="Hamburguer Smash" data-price="18.50" class="fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn hover:scale-110"></button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do produto1 -->
+
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/hamb-3.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold">Hamburguer Duplo</p>
+                    <p class="text-sm">Pao levinho de fermentação natural de trigo, bacon e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 22,50</p>
+                        <button data-name="Hamburguer Duplo" data-price="22.50" class=" hover:scale-110 fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/hamb-4.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold">Hamburguer Salad</p>
+                    <p class="text-sm">Pao levinho de fermentação natural de trigo, bacon e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15,50</p>
+                        <button data-name="Hamburguer Salad" data-price="15.50" class=" hover:scale-110 fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/hamb-3.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold">Hamburguer Da Casa</p>
+                    <p class="text-sm">Pao levinho de fermentação natural de trigo, bacon e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35,50</p>
+                        <button data-name="Hamburguer Da Casa" data-price="35.50" class=" hover:scale-110 fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto mx-w-7xl px-2 my-2 mb-8 mt-7">
+            <h1 class="font-bold text-3xl text-center">Bebidas</h1>
+        </div>
+        <hr>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-10" id="menu">
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/refri-1.png" alt="">
+                </div>
+                <div class="w-full">
+                    <p class="font-bold">Coca-cola Lata</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button data-name="coca-cola lata" data-price="6.00" class=" hover:scale-110 fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="">
+                    <img class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" src="../cardapioOnline/assets/refri-2.png" alt="">
+                </div>
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button data-name="Guarana lata" data-price="6.00" class=" hover:scale-110 fa fa-cart-plus text-lg text-white bg-gray-900 px-5 py-1 rounded add-to-cart-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal cart-->
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden conteudo" id="cart-modal">
+
+        <div class="bg-white bg-scroll p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2 ">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+                <!--Fazer aqui aonde serao colocados os produtos-->
+            </div>
+
+            <p class="font-bold mt-4">Total: <span id="cart-total">R$ 0.00</span></p>
+
+            <p class="font-bold">Endereço de entrega:</p>
+            <input class="w-full border-2 p-1 rounded my-1" placeholder="Digite seu endereço..." id="address" type="text">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo !</p>
+            <p class="text-red-500 hidden" id="empty-warn">Seu carrinho esta vazio !</p>
+
+            <p class="font-bold">Forma de pagamento</p>
+            <p class="font-bold text-red-600 hidden" id="trocoWarning">Selecione a forma de pagamento !</p>
+            <select class="w-full border-2 p-1 rounded my-1 " name="formadepagar" id="selectPagamento">
+                <option value="naoselecionado">Selecionar</option>
+                <option value="cartao">Cartão (pague na entrega)</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <p class="font-bold hidden" id="troco-aviso">Precisa de troco ?</p>
+            <input class="w-full border-2 p-1 rounded my-1 hidden" id="troco" type="number">
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="chekout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--ESPAÇO PARA O CARRINHO -->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            ( <span id="cart-count" class="">0</span> )
+            Ver meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+
+    </footer>
+
+    <script src="../cardapioOnline/script.js"></script>
+    
+</body>
+</html>
